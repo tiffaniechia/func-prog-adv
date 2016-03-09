@@ -4,5 +4,38 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: whitesmoke;
+  text-decoration: none;
 }
+
+button {
+    height: 5em;
+    border-radius: 1em;
+    padding:1em;
+    background-color: slategrey;
+}
+
+pre {
+    font: inherit;
+}
+
+h1 {
+    padding-bottom: 1.5em;
+}
+
+.story {
+    width: 90%;
+    text-align: justify;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap;     /* Opera <7 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;
+}
+
+.action-buttons {
+    width: 90%;
+    text-align: left;
+    padding-top: 2em;
+}
+
