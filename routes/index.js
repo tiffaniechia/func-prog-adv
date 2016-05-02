@@ -11,7 +11,7 @@ function logger(req, res, next) {
 
 router.get('/adventures/:title',function (req, res,next) {
     var parsedTitle = req.params.title.replace(/-/g,"%20");
-    var MongoDBUrl = 'https://api.mlab.com/api/1/databases/functional-prog-adventure/collections/adventures?q={%22title%22:%20%22'+ parsedTitle +'%22}&apiKey=_t6ifED-gRfhDc3c2IEtK3_nZ5tQ2K2F';
+    var MongoDBUrl = 'https://api.mlab.com/api/1/databases/functional-prog-adventure/collections/adventures?q={%22title%22:%20%22'+ parsedTitle +'%22}&apiKey=' + process.env.API_KEY;
     var query;
     request(MongoDBUrl, function (error, response, body) {
         if (!error && response.statusCode == 200) {
