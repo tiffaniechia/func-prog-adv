@@ -31,7 +31,7 @@ router.get('/',function (req, res,next) {
         if (!error && response.statusCode == 200) {
             query = JSON.parse(body);
             query = query[0];
-            res.render('home', list: query);
+            res.render('home', {list: query});
         }
     });
 });
