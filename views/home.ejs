@@ -7,11 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<h1> Hello Adventurer!</h1>
-<pre class="story"><%= list %></pre>
-<!--<div class="action-buttons">-->
-    <!--<button><a href="<%= link_to_code %>">Go do quest</a></button>-->
-    <!--<button><a href="<%= link_to_answer %>">Check what Vitaly, the Oracle, has to say</a></button>-->
-</div>
+    <h1> *\o/*</h1>
+    <table>
+        <tr>
+            <th>Adventures</th>
+            <th>Tags</th>
+        </tr>
+        <% for(var i=0; i < list.length; i++) { %>
+        <tr>
+            <td><a href="/adventures/<%= list[i].title %>"><%= list[i].title %></a></td>
+            <td><%= list[i].tags %></td>
+        </tr>
+        <% } %>
+    </table>
 </body>
 </html>

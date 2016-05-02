@@ -39,3 +39,20 @@ h1 {
     padding-top: 2em;
 }
 
+table {
+    width: 50%;
+}
+
+table a {
+    color: black;
+}
+
+table a:hover {
+    color: teal;
+}
+
+th {
+    text-align: left;
+    text-transform: uppercase;
+}
+
